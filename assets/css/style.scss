@@ -1,0 +1,112 @@
+@font-face{
+    font-family: 'PlusJakarta';
+    src: url(/assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PlusJakarta', 'sans-serif';
+    text-decoration: none;
+}
+
+.main{
+    background-color: #F9FAFE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    .container{
+        background-color: #fff;
+        padding: 35px;
+        border-radius: 20px;
+        max-width: 730px;
+
+        .notifications-numbers{
+            display: flex;
+            justify-content: space-between;
+            background-color: red;
+            margin-bottom: 35px;
+
+            .box-notifications{
+                display: flex;
+
+                h2{
+                    display: flex;
+                    align-items: center;
+                    font-size: 20px;
+                    margin-right: 10px;
+                }
+
+                .number-notif{
+                    background-color: #0D3378;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: #fff;
+                    font-weight: bold;
+                    padding: 5px 10px;
+                    border-radius: 10px;
+                }
+            }
+
+            .mark-opt{
+                display: flex;
+                align-items: center;
+                color: #9a9ea7;
+            }
+        }
+
+        .notifications-persons{
+            display: flex;
+            flex-direction: column;
+            background-color: darkslateblue;
+
+            .person-notif{
+                display: flex;
+                background-color: #f6fafd;
+                background-color: #95c7ec;
+                margin-bottom: 10px;
+                border-radius: 10px;
+
+                .person-photo{
+                    width: 85px;
+                    padding: 15px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img{
+                        width: 100%;
+                        border-radius: 50%;
+                        border: 1px solid #ddd;
+                    }
+                }
+                .person-comments{
+                    background-color: #f6fafd;
+                    padding-right: 40px;
+                    border-radius: 0 10px 10px 0;
+                    display: flex;
+                    flex: 1;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    .person--comment{
+                        color: #656974;
+
+                        a{
+                            font-weight: bold;
+                            color: #000;
+                        }
+                    }
+
+                    .time-posted{
+                        color: #969da5;
+                    }
+                }
+            }
+        }
+    }
+}
