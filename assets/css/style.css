@@ -159,44 +159,47 @@
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 20px 10px 20px 0px;
 }
 
-.main .container .notifications-persons .person-notif .person-comments .person--comment {
+.main .container .notifications-persons .person-notif .person-comments .box-comment-time .person--comment {
   color: #656974;
   word-spacing: 2px;
 }
 
-.main .container .notifications-persons .person-notif .person-comments .person--comment a {
+.main .container .notifications-persons .person-notif .person-comments .box-comment-time .person--comment a {
   font-weight: 800;
   color: #000;
 }
 
-.main .container .notifications-persons .person-notif .person-comments .person--comment #tournament {
+.main .container .notifications-persons .person-notif .person-comments .box-comment-time .person--comment .recent-post {
   color: #5a606e;
 }
 
-.main .container .notifications-persons .person-notif .person-comments .person--comment #chess-club {
+.main .container .notifications-persons .person-notif .person-comments .box-comment-time .person--comment .chess-club {
   color: #1f3066;
 }
 
-.main .container .notifications-persons .person-notif .person-comments .person--comment a:hover {
+.main .container .notifications-persons .person-notif .person-comments .box-comment-time .person--comment a:hover {
   color: #1f3066 !important;
 }
 
-.main .container .notifications-persons .person-notif .person-comments .time-posted {
+.main .container .notifications-persons .person-notif .person-comments .box-comment-time .time-posted {
   color: #969da5;
   margin: 3px;
 }
 
-.main .container .notifications-persons .person-notif .person-comments .message {
+.main .container .notifications-persons .person-notif .person-comments .box-comment-time .message {
   border: 1px solid #e1e5e6;
   background-color: #fff;
   padding: 20px;
@@ -204,5 +207,13 @@
   color: #6b6a6a;
   border-radius: 5px;
   margin-top: 7px;
+}
+
+.main .container .notifications-persons .person-notif .person-comments .picture-notif {
+  height: 50px;
+}
+
+.main .container .notifications-persons .person-notif .person-comments .picture-notif img {
+  height: 100%;
 }
 /*# sourceMappingURL=style.css.map */
