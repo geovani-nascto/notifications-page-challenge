@@ -3,6 +3,8 @@
     src: url(/assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
 }
 
+$color-new-notif: #f6fafd;
+
 *{
     margin: 0;
     padding: 0;
@@ -73,12 +75,10 @@
         .notifications-persons{
             display: flex;
             flex-direction: column;
-            background-color: darkslateblue;
 
             .person-notif{
                 display: flex;
-                background-color: #f6fafd;
-                background-color: #95c7ec;
+                background-color: $color-new-notif;
                 margin-bottom: 10px;
                 border-radius: 10px;
 
@@ -100,7 +100,6 @@
                     align-items: flex-start;
                 }
                 .person-comments{
-                    background-color: #f6fafd;
                     border-radius: 0 10px 10px 0;
                     display: flex;
                     flex: 1;
@@ -136,6 +135,7 @@
                         .time-posted{
                             color: #969da5;
                             margin: 3px;
+                            font-size: 15px;
                         }
     
                         .message{
@@ -158,6 +158,73 @@
                     }
                 }
             }
+
+            .person-notif-old{
+                background-color: #fff;
+            }
+        }
+    }
+}
+
+@media(max-width:636px){
+
+    .main .container{
+        margin: 0;
+        padding: 20px;
+    }
+
+    .main .container .notifications-numbers{
+        margin-bottom: 20px;
+
+        .box-notifications{
+
+            .number-notif{
+                padding: 0 12px;
+                font-size: 16px;
+            }
+
+        }
+
+        .mark-opt{
+            h4{
+                font-size: 14px;
+            }
+        }
+    }
+
+    .main .container .notifications-persons .person-notif #photo-kimberly{
+        align-items: flex-start;
+    }
+
+    .main .container .notifications-persons .person-notif .person-photo{
+        width: 0;
+        flex: 1;
+    }
+
+    .main .container .notifications-persons .person-notif .person-comments{
+        flex: 4;
+
+        .box-comment-time .person--comment{
+            font-size: 0.80rem;
+        }
+
+        .box-comment-time .time-posted{
+            font-size: 0.78rem;
+        }
+
+        .box-comment-time .message{
+            font-size: 0.80rem;
+        }
+    }
+
+    .main .container .notifications-persons .person-notif .person-comments .picture-notif{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+
+        img{
+            height: 50px;
+            // height: 50px;
         }
     }
 }

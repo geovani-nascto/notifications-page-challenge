@@ -111,7 +111,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: darkslateblue;
 }
 
 .main .container .notifications-persons .person-notif {
@@ -119,7 +118,6 @@
   display: -ms-flexbox;
   display: flex;
   background-color: #f6fafd;
-  background-color: #95c7ec;
   margin-bottom: 10px;
   border-radius: 10px;
 }
@@ -151,7 +149,6 @@
 }
 
 .main .container .notifications-persons .person-notif .person-comments {
-  background-color: #f6fafd;
   border-radius: 0 10px 10px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -197,6 +194,7 @@
 .main .container .notifications-persons .person-notif .person-comments .box-comment-time .time-posted {
   color: #969da5;
   margin: 3px;
+  font-size: 15px;
 }
 
 .main .container .notifications-persons .person-notif .person-comments .box-comment-time .message {
@@ -215,5 +213,63 @@
 
 .main .container .notifications-persons .person-notif .person-comments .picture-notif img {
   height: 100%;
+}
+
+.main .container .notifications-persons .person-notif-old {
+  background-color: #fff;
+}
+
+@media (max-width: 636px) {
+  .main .container {
+    margin: 0;
+    padding: 20px;
+  }
+  .main .container .notifications-numbers {
+    margin-bottom: 20px;
+  }
+  .main .container .notifications-numbers .box-notifications .number-notif {
+    padding: 0 12px;
+    font-size: 16px;
+  }
+  .main .container .notifications-numbers .mark-opt h4 {
+    font-size: 14px;
+  }
+  .main .container .notifications-persons .person-notif #photo-kimberly {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .main .container .notifications-persons .person-notif .person-photo {
+    width: 0;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .main .container .notifications-persons .person-notif .person-comments {
+    -webkit-box-flex: 4;
+        -ms-flex: 4;
+            flex: 4;
+  }
+  .main .container .notifications-persons .person-notif .person-comments .box-comment-time .person--comment {
+    font-size: 0.80rem;
+  }
+  .main .container .notifications-persons .person-notif .person-comments .box-comment-time .time-posted {
+    font-size: 0.78rem;
+  }
+  .main .container .notifications-persons .person-notif .person-comments .box-comment-time .message {
+    font-size: 0.80rem;
+  }
+  .main .container .notifications-persons .person-notif .person-comments .picture-notif {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main .container .notifications-persons .person-notif .person-comments .picture-notif img {
+    height: 50px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
